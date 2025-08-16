@@ -2,7 +2,9 @@ package com.event.clientservice.web;
 
 import com.event.clientservice.entities.Client;
 import com.event.clientservice.repositories.ClientRepository;
+import com.event.clientservice.service.UserService;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +14,9 @@ import java.util.List;
 public class ClientController {
 
     private ClientRepository clientRepository;
+
+    @Autowired
+    UserService userService;
 
     public ClientController(ClientRepository clientRepository) {
         this.clientRepository = clientRepository;
@@ -42,6 +47,17 @@ public class ClientController {
     @DeleteMapping("/clients/{id}")
     public void deleteClient(@PathVariable Long id) {
         clientRepository.deleteById(id);
+    }
+
+
+    @PostMapping("/register")
+    public Client register(@RequestBody Client user) {
+        return userService.register(user);
+    }
+
+    @PostMapping("/login")
+    public String login(@RequestBody Client user) {
+        return userService.verify(user);
     }
 
 }
