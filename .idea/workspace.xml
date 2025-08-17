@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eadbaf2-f5c4-4467-ba2c-d45921681703" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/repositories/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/repositories/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/JWTService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/EventServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/EventServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "anaslaaouamir"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;anaslaaouamir&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/anaslaaouamir/Event-Management-System.git",
-    "accountId": "e128aa44-775a-4043-920c-1ecb57c92437"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/anaslaaouamir/Event-Management-System.git&quot;,
+    &quot;accountId&quot;: &quot;e128aa44-775a-4043-920c-1ecb57c92437&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -61,31 +67,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ClientServiceApplication.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ClientServiceApplication.executor": "Run",
-    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
-    "Spring Boot.EventServiceApplication.executor": "Run",
-    "Spring Boot.ReservationServiceApplication.executor": "Run",
-    "Spring Boot.ReviewApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/T470/Desktop/learning/security",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ClientServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EventServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ReservationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ReviewApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/T470/Desktop/learning/security&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -173,6 +179,8 @@
       <workItem from="1754921987593" duration="2692000" />
       <workItem from="1754993118981" duration="7141000" />
       <workItem from="1755251809413" duration="8047000" />
+      <workItem from="1755338780277" duration="10046000" />
+      <workItem from="1755425513976" duration="4028000" />
     </task>
     <servers />
   </component>

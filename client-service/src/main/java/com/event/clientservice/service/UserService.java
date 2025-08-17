@@ -9,6 +9,11 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.security.core.GrantedAuthority;
+
+
+import java.util.Collections;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -33,8 +38,14 @@ public class UserService {
         Authentication authentication = authenticationManager
                 .authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
 
-        if(authentication.isAuthenticated()) {
-            return jwtService.generateToken(user.getUsername());
+        if (authentication.isAuthenticated()) {
+            // Extract roles from the authenticated principal
+            List<String> roles = authentication.getAuthorities().stream()
+                    .map(GrantedAuthority::getAuthority)
+                    .toList();
+
+            System.out.println("Roles from authentication: " + roles);
+            return jwtService.generateToken(user.getUsername(), roles);
         }
 
         return "Failed";

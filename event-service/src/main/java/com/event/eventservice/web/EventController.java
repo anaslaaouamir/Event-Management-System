@@ -3,6 +3,7 @@ package com.event.eventservice.web;
 import com.event.eventservice.entities.Event;
 import com.event.eventservice.repositories.EventRepository;
 import org.springframework.beans.BeanUtils;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -15,22 +16,26 @@ public class EventController {
         this.eventRepository = eventRepository;
     }
 
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @GetMapping("/events")
     public List<Event> getEvents() {
         System.out.println(eventRepository.findAll());
         return eventRepository.findAll();
     }
 
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @GetMapping("/events/{id}")
     public Event getEvent(@PathVariable Long id) {
         return eventRepository.findById(id).get();
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/events")
     public void addEvent(@RequestBody Event event) {
         eventRepository.save(event);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/events/{id}")
     public void updateEvent(@PathVariable Long id, @RequestBody Event event) {
         Event event1 = eventRepository.findById(id).orElseThrow();
@@ -38,11 +43,13 @@ public class EventController {
         eventRepository.save(event1);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/events/{id}")
     public void deleteEvent(@PathVariable Long id) {
         eventRepository.deleteById(id);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/dcrement/{id}")
     public void decrementCapacity(@PathVariable Long id) {
         Event event = eventRepository.findById(id).orElseThrow();
@@ -50,6 +57,7 @@ public class EventController {
         eventRepository.save(event);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/increment/{id}")
     public void incrementCapacity(@PathVariable Long id) {
         Event event = eventRepository.findById(id).orElseThrow();

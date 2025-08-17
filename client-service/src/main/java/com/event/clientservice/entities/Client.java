@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Getter
@@ -23,4 +24,7 @@ public class Client {
     private String password;
     private String username;
     private String phoneNumber;
+
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<String> roles;
 }
