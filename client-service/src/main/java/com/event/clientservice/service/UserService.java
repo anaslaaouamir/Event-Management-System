@@ -45,7 +45,7 @@ public class UserService {
                     .toList();
 
             System.out.println("Roles from authentication: " + roles);
-            return jwtService.generateToken(user.getUsername(), roles);
+            return jwtService.generateToken(user.getUsername(), roles, user.getIdClient());
         }
 
         return "Failed";

@@ -4,8 +4,10 @@ import com.event.reservationservice.entitites.Reservation;
 import com.event.reservationservice.models.Client;
 import com.event.reservationservice.models.Event;
 import com.event.reservationservice.repositories.ReservationRepository;
-import jakarta.ws.rs.DELETE;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import com.event.reservationservice.models.Class;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,12 +25,16 @@ public class ReservationController {
         this.clientOpenFeign = clientOpenFeign;
     }
 
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @PostMapping("/reservations")
-    public void addReservation(@RequestBody Reservation reservation) {
+    public Reservation addReservation(@RequestBody Reservation reservation) {
         reservationRepository.save(reservation);
         eventOpenFeign.decrementCapacity(reservation.getIdEvent());
+        eventOpenFeign.decrementClasse(reservation.getIdClasse());
+        return reservation;
     }
 
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @GetMapping("/reservations_client/{id_client}")
     public List<Reservation> reservationsByClient(@PathVariable Long id_client) {
         List<Reservation> reservations = new ArrayList<>();
@@ -37,13 +43,18 @@ public class ReservationController {
         for (Reservation reservation : reservations1) {
             if(reservation.getIdClient() == id_client) {
                 Event event = eventOpenFeign.getEvent(reservation.getIdEvent());
+                Class classe = eventOpenFeign.getClasse(reservation.getIdClasse());
                 reservation.setEvent(event);
                 reservation.setClient(client);
+                reservation.setClasse(classe);
                 reservations.add(reservation);}
         }
         return reservations;
     }
 
+
+
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @GetMapping("/reservations_event/{id_event}")
     public List<Reservation> reservationsByEvent(@PathVariable Long id_event) {
         List<Reservation> reservations = new ArrayList<>();
@@ -59,10 +70,17 @@ public class ReservationController {
         return reservations;
     }
 
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @DeleteMapping("/reservations/{id}")
     public void cancelReservation(@PathVariable Long id){
         Reservation reservation = reservationRepository.findById(id).get();
         eventOpenFeign.incrementCapacity(reservation.getIdEvent());
+        eventOpenFeign.incrementClasse(reservation.getIdClasse());
         reservationRepository.deleteById(id);
+    }
+
+    @GetMapping("/test")
+    public String test(){
+        return "test";
     }
 }

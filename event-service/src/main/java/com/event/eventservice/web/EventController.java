@@ -16,14 +16,13 @@ public class EventController {
         this.eventRepository = eventRepository;
     }
 
-    @PreAuthorize("hasAnyRole('ADMIN','USER')")
+
     @GetMapping("/events")
     public List<Event> getEvents() {
         System.out.println(eventRepository.findAll());
         return eventRepository.findAll();
     }
 
-    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @GetMapping("/events/{id}")
     public Event getEvent(@PathVariable Long id) {
         return eventRepository.findById(id).get();
@@ -49,7 +48,7 @@ public class EventController {
         eventRepository.deleteById(id);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @PutMapping("/dcrement/{id}")
     public void decrementCapacity(@PathVariable Long id) {
         Event event = eventRepository.findById(id).orElseThrow();
@@ -57,7 +56,7 @@ public class EventController {
         eventRepository.save(event);
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
     @PutMapping("/increment/{id}")
     public void incrementCapacity(@PathVariable Long id) {
         Event event = eventRepository.findById(id).orElseThrow();

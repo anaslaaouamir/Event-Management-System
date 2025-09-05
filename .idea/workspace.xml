@@ -7,15 +7,22 @@
     <list default="true" id="7eadbaf2-f5c4-4467-ba2c-d45921681703" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/entities/UserPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/JWTService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/EventServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/EventServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/entitites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/entitites/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/entitites/Seat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/models/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/EventOpenFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/EventOpenFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -83,15 +90,21 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/T470/Desktop/learning/security&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/T470/Desktop/Event Management System/Event Management System/event-service/src/main/resources/static/images/events&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\T470\Desktop\Event Management System\Event Management System\event-service\src\main\resources\static\images\events" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -151,6 +164,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ClientServiceApplication" />
+      <item itemvalue="Spring Boot.ClientServiceApplication" />
+      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
+      <item itemvalue="Spring Boot.EventServiceApplication" />
+      <item itemvalue="Spring Boot.ReservationServiceApplication" />
+      <item itemvalue="Spring Boot.ReviewApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClientServiceApplication" />
@@ -180,7 +201,18 @@
       <workItem from="1754993118981" duration="7141000" />
       <workItem from="1755251809413" duration="8047000" />
       <workItem from="1755338780277" duration="10046000" />
-      <workItem from="1755425513976" duration="4028000" />
+      <workItem from="1755425513976" duration="6027000" />
+      <workItem from="1755437944468" duration="4460000" />
+      <workItem from="1755772562474" duration="646000" />
+      <workItem from="1756030980316" duration="6754000" />
+      <workItem from="1756116713041" duration="5493000" />
+      <workItem from="1756203174284" duration="1648000" />
+      <workItem from="1756227674711" duration="1676000" />
+      <workItem from="1756290382018" duration="214000" />
+      <workItem from="1756290927938" duration="6343000" />
+      <workItem from="1756462811910" duration="4646000" />
+      <workItem from="1756637270773" duration="4722000" />
+      <workItem from="1756722320090" duration="9813000" />
     </task>
     <servers />
   </component>

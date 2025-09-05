@@ -5,6 +5,8 @@ import com.event.clientservice.repositories.ClientRepository;
 import com.event.clientservice.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,6 +33,20 @@ public class ClientController {
     public Client getClient(@PathVariable Long id) {
         return clientRepository.findById(id).get();
     }
+
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
+    @GetMapping("/clientss/{username}")
+    public Client getClientByUsername(@PathVariable String username) {
+        return clientRepository.findByUsername(username);
+    }
+
+    @GetMapping("/clients/me")
+    @PreAuthorize("hasAnyRole('ADMIN','USER')")
+    public Client getAuthenticatedClient(Authentication authentication) {
+        String username = authentication.getName(); // comes from JWT subject
+        return clientRepository.findByUsername(username);
+    }
+
 
     @PostMapping("/clients")
     public void addClient(@RequestBody Client client) {

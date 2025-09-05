@@ -43,7 +43,6 @@ protected void doFilterInternal(HttpServletRequest request,
         if (jwtService.validateToken(jwt, username)) {
             Claims claims = jwtService.extractAllClaims(jwt);
 
-            // ✅ Extract roles as List
             List<String> roles = claims.get("roles", List.class);
 
             List<SimpleGrantedAuthority> authorities = roles.stream()

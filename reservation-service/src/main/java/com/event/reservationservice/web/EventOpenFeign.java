@@ -1,5 +1,5 @@
 package com.event.reservationservice.web;
-
+import com.event.reservationservice.models.Class;
 import com.event.reservationservice.models.Event;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.FeignClientProperties;
@@ -21,4 +21,14 @@ public interface EventOpenFeign {
 
     @PutMapping("/dcrement/{id}")
     public void decrementCapacity(@PathVariable Long id);
+
+    @GetMapping("classes/{id}")
+    public Class getClasse(@PathVariable Long id);
+
+    @PutMapping("/dcrement_classe/{id}")
+    public void decrementClasse(@PathVariable Long id);
+
+    @PutMapping("/increment_classe/{id}")
+    public void incrementClasse(@PathVariable Long id);
+
 }
