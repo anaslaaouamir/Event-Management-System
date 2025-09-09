@@ -52,7 +52,7 @@ protected void doFilterInternal(HttpServletRequest request,
             UsernamePasswordAuthenticationToken authentication =
                     new UsernamePasswordAuthenticationToken(
                             new User(username, "", authorities),
-                            null,
+                            jwt,
                             authorities
                     );
 

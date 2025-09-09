@@ -79,6 +79,20 @@ public class ReservationController {
         reservationRepository.deleteById(id);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
+    @DeleteMapping("/delete_by_event/{id_event}")
+    public void deleteReservationByEvent(@PathVariable Long id_event){
+        List<Reservation> reservations = reservationRepository.findByIdEvent(id_event);
+        List<Reservation> reservations1 = reservationRepository.findAll();
+        for(Reservation reservation1 : reservations1) {
+            for(Reservation reservation : reservations) {
+                if(reservation.getIdReservation() == reservation1.getIdReservation()) {
+                    reservationRepository.delete(reservation);
+                }
+            }
+        }
+    }
+
     @GetMapping("/test")
     public String test(){
         return "test";

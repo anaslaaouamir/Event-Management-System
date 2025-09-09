@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eadbaf2-f5c4-4467-ba2c-d45921681703" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/JWTService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Class.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/ClasseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/ClasseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/entitites/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/entitites/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/entitites/Seat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/models/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/EventOpenFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/EventOpenFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/repositories/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/repositories/ReservationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -213,6 +202,12 @@
       <workItem from="1756462811910" duration="4646000" />
       <workItem from="1756637270773" duration="4722000" />
       <workItem from="1756722320090" duration="9813000" />
+      <workItem from="1757078962156" duration="4337000" />
+      <workItem from="1757107321420" duration="1131000" />
+      <workItem from="1757157231006" duration="4130000" />
+      <workItem from="1757240841411" duration="10830000" />
+      <workItem from="1757327134852" duration="9744000" />
+      <workItem from="1757412385678" duration="336000" />
     </task>
     <servers />
   </component>

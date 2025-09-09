@@ -50,7 +50,7 @@ public class Class {
     }
 
     public void setIdClass(Long idClass) {
-        this.idClass = this.idClass;
+        this.idClass = idClass;
     }
 
     public String getClassName() {
