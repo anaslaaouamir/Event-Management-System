@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7eadbaf2-f5c4-4467-ba2c-d45921681703" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/ClasseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/ClasseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/repositories/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/repositories/ReservationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/T470/Desktop/Event Management System/Event Management System/event-service/src/main/resources/static/images/events&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/T470/Desktop/Event Management System/Event Management System&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,6 +89,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\T470\Desktop\Event Management System\Event Management System\event-service\src\main\resources\static\images\events" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\T470\Desktop\Event Management System\Event Management System\event-service\src\main\resources\static\images\salles" />
       <recent name="C:\Users\T470\Desktop\Event Management System\Event Management System\event-service\src\main\resources\static\images\events" />
     </key>
   </component>
@@ -207,7 +209,13 @@
       <workItem from="1757157231006" duration="4130000" />
       <workItem from="1757240841411" duration="10830000" />
       <workItem from="1757327134852" duration="9744000" />
-      <workItem from="1757412385678" duration="336000" />
+      <workItem from="1757412385678" duration="6678000" />
+      <workItem from="1757446516853" duration="627000" />
+      <workItem from="1757494324151" duration="12000" />
+      <workItem from="1757494358074" duration="1170000" />
+      <workItem from="1757757690870" duration="4861000" />
+      <workItem from="1757785454322" duration="826000" />
+      <workItem from="1757845391348" duration="979000" />
     </task>
     <servers />
   </component>

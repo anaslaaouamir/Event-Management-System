@@ -3,6 +3,7 @@ package com.event.eventservice.web;
 import com.event.eventservice.entities.Class;
 import com.event.eventservice.entities.Event;
 import com.event.eventservice.repositories.ClasseRepository;
+import com.event.eventservice.repositories.EventRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +14,11 @@ import java.util.List;
 
 public class ClasseController {
     private ClasseRepository classeRepository;
+    private EventRepository eventRepository;
 
-    public ClasseController(ClasseRepository classeRepository) {
+    public ClasseController(ClasseRepository classeRepository, EventRepository eventRepository) {
         this.classeRepository = classeRepository;
+        this.eventRepository = eventRepository;
     }
 
     @GetMapping("/classes")
@@ -58,4 +61,16 @@ public class ClasseController {
         classe.setCapacity(classe.getCapacity() + 1);
         classeRepository.save(classe);
     }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/classes")
+    public Event addClass(@RequestBody Class classe) {
+        classeRepository.save(classe);
+        Event event=eventRepository.findById(classe.getEvent().getIdEvent()).orElseThrow();
+        event.setCapacity(event.getCapacity() + classe.getCapacity());
+        event.setFullCapacity(event.getFullCapacity() + classe.getFullCapacity());
+        eventRepository.save(event);
+        return event;
+    }
+
 }

@@ -7,6 +7,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -54,10 +55,20 @@ public class ClientController {
     }
 
     @PutMapping("/clients/{id}")
-    public void updateClient(@PathVariable Long id, @RequestBody Client client) {
+    public Client updateClient(@PathVariable Long id, @RequestBody Client client) {
         Client client1 = clientRepository.findById(id).orElseThrow();
-        BeanUtils.copyProperties(client, client1);
+        client1.setName(client.getName());
+        client1.setEmail(client.getEmail());
+        client1.setPhoneNumber(client.getPhoneNumber());
+
+        if(client.getPassword() != null) {
+            BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(10);
+            client1.setPassword(bCryptPasswordEncoder.encode(client.getPassword()));
+        }else{
+            System.out.println("passowrd is null");
+        }
         clientRepository.save(client1);
+        return client1;
     }
 
     @DeleteMapping("/clients/{id}")

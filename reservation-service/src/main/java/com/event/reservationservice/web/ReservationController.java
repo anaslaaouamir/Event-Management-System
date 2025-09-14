@@ -52,9 +52,15 @@ public class ReservationController {
         return reservations;
     }
 
-
-
     @PreAuthorize("hasAnyRole('ADMIN','USER')")
+    @GetMapping ("/reservations")
+    public List<Reservation> allReservations(){
+        return reservationRepository.findAll();
+    }
+
+
+
+    @PreAuthorize("hasAnyRole('ADMIN')")
     @GetMapping("/reservations_event/{id_event}")
     public List<Reservation> reservationsByEvent(@PathVariable Long id_event) {
         List<Reservation> reservations = new ArrayList<>();
@@ -63,6 +69,8 @@ public class ReservationController {
         for (Reservation reservation : reservations1) {
             if(reservation.getIdEvent() == id_event) {
                 Client client = clientOpenFeign.getClient(reservation.getIdClient());
+                Class classe = eventOpenFeign.getClasse(reservation.getIdClasse());
+                reservation.setClasse(classe);
                 reservation.setEvent(event);
                 reservation.setClient(client);
                 reservations.add(reservation);}
