@@ -30,6 +30,17 @@ public class Event {
     private int capacity;
     private int fullCapacity;
 
+    public String getTags() {
+        return Tags;
+    }
+
+    public void setTags(String tags) {
+        Tags = tags;
+    }
+
+    @Column(length = 500)
+    private String Tags;
+
     public Set<Class> getClasses() {
         return classes;
     }

@@ -53,7 +53,7 @@ public class ReservationController {
     }
 
     @PreAuthorize("hasAnyRole('ADMIN','USER')")
-    @GetMapping ("/reservations")
+     adMapping ("/reservations")
     public List<Reservation> allReservations(){
         return reservationRepository.findAll();
     }

@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7eadbaf2-f5c4-4467-ba2c-d45921681703" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/web/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/ClasseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/ClasseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/entities/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/web/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +213,12 @@
       <workItem from="1757494358074" duration="1170000" />
       <workItem from="1757757690870" duration="4861000" />
       <workItem from="1757785454322" duration="826000" />
-      <workItem from="1757845391348" duration="979000" />
+      <workItem from="1757845391348" duration="2413000" />
+      <workItem from="1757878079525" duration="1971000" />
+      <workItem from="1757928982830" duration="7047000" />
+      <workItem from="1758016348753" duration="5451000" />
+      <workItem from="1758103459357" duration="4012000" />
+      <workItem from="1758192479351" duration="306000" />
     </task>
     <servers />
   </component>

@@ -37,8 +37,16 @@ public class EventController {
     }
 
     @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/eventss")
+    public void addEvent(@RequestBody List<Event> events) {
+        for(Event event : events) {
+            eventRepository.save(event);
+        }
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/events")
-    public Event addEvent(@RequestBody Event event) {
+    public Event addEvents(@RequestBody Event event) {
         eventRepository.save(event);
         return event;
     }
