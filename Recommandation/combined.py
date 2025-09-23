@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+from datetime import datetime
 
 def recommandation(user_id,events_df,cosine_sim,user_event_matrix,user_similarity_df):
 
@@ -26,6 +28,14 @@ def recommandation(user_id,events_df,cosine_sim,user_event_matrix,user_similarit
         # Remove events already reserved
         reserved = user_event_matrix.loc[user_id].values
         final_scores[reserved > 0] = -1
+
+        # Make sure eventDateTime is datetime
+        events_df["eventDateTime"] = pd.to_datetime(events_df["eventDateTime"], errors="coerce")
+
+        # Filter out past events
+        today = pd.Timestamp(datetime.now())
+        future_mask = events_df["eventDateTime"] > today
+        final_scores = np.where(future_mask, final_scores, -1)
 
         # Top-N
         top_indices = final_scores.argsort()[-top_n:][::-1]
