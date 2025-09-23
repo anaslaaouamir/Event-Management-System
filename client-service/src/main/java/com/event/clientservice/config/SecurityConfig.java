@@ -3,6 +3,7 @@ package com.event.clientservice.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -41,8 +42,10 @@ public class SecurityConfig {
 
         return
                 http.csrf(customizer -> customizer.disable())
-                        .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+
+                        //.cors(cors -> cors.configurationSource(corsConfigurationSource()))
                         .authorizeHttpRequests(request ->request
+                                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                                 .requestMatchers("/register","/login")
                                 .permitAll()
                                 .anyRequest().authenticated())
@@ -71,15 +74,16 @@ public class SecurityConfig {
         return config.getAuthenticationManager();
     }
 
+    /*
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3000"));
+        configuration.setAllowedOrigins(List.of("http://localhost:3000","http://localhost:8888"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
         configuration.setAllowedHeaders(List.of("*"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
-    }
+    }*/
 
 }

@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7eadbaf2-f5c4-4467-ba2c-d45921681703" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/event/clientservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/java/com/event/eventservice/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/models/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ClientOpenFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ClientOpenFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/EventOpenFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/EventOpenFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/java/com/event/reservationservice/web/ReservationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,14 +78,16 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.ClientServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.EventServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatwayServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ReservationServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ReviewApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/T470/Desktop/Event Management System/Event Management System&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/T470/Desktop/Event Management System/Event Management System/gatway_service&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -131,6 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.event.configservice.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="discovery-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.event.discoveryservice.DiscoveryServiceApplication" />
@@ -141,6 +154,13 @@
     <configuration name="EventServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="event-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.event.eventservice.EventServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatwayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gatway_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.event.gatway_service.GatwayServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,6 +181,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.ClientServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServiceApplication" />
+      <item itemvalue="Spring Boot.GatwayServiceApplication" />
       <item itemvalue="Spring Boot.ClientServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.EventServiceApplication" />
@@ -226,7 +248,13 @@
       <workItem from="1758103459357" duration="4012000" />
       <workItem from="1758192479351" duration="10982000" />
       <workItem from="1758217220617" duration="9000" />
-      <workItem from="1758276721431" duration="2379000" />
+      <workItem from="1758276721431" duration="5524000" />
+      <workItem from="1758362644611" duration="4018000" />
+      <workItem from="1758395980001" duration="2550000" />
+      <workItem from="1758449273368" duration="12011000" />
+      <workItem from="1758486275726" duration="2115000" />
+      <workItem from="1758534966251" duration="2334000" />
+      <workItem from="1758626631812" duration="1339000" />
     </task>
     <servers />
   </component>
