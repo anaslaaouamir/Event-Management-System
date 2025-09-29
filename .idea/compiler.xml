@@ -12,7 +12,18 @@
         <module name="discovery-service" />
         <module name="client-service" />
       </profile>
-      <profile name="Annotation profile for reservation-service" enabled="true">
+      <profile name="Annotation profile for Review" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="Review" />
+        <module name="reservation-service" />
+      </profile>
+      <profile name="Annotation profile for event-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,8 +31,6 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="event-service" />
-        <module name="reservation-service" />
-        <module name="Review" />
       </profile>
     </annotationProcessing>
   </component>
