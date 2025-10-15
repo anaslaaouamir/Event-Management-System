@@ -13,10 +13,10 @@ app = FastAPI()
 @app.on_event("startup")
 async def startup_event():
     await eureka_client.init_async(
-        eureka_server="http://localhost:8761/eureka/",
-        app_name="recommend-events",
+        eureka_server="http://discovery-service:8761/eureka/",
+        app_name="fastapi-service",
         instance_port=8000,
-        instance_host="localhost"
+        instance_host="fastapi-service"
     )
 
 @app.on_event("shutdown")
@@ -37,14 +37,14 @@ async def user(
     token = authorization.replace("Bearer ", "")
 
     # 🔹 Fetch events
-    url_events = "http://localhost:9092/events"
+    url_events = "http://event-service:9092/events"
     async with httpx.AsyncClient() as client:
         response_events = await client.get(url_events)
         response_events.raise_for_status()
         events = response_events.json()
 
     # 🔹 Fetch reservations for this client
-    url_reservations_user = f"http://localhost:9093/reservations_client/{client_id}"
+    url_reservations_user = f"http://reservation-service:9093/reservations_client/{client_id}"
     headers = {"Authorization": f"Bearer {token}"}
     async with httpx.AsyncClient() as client:
         response_reservations_user = await client.get(url_reservations_user, headers=headers)
@@ -52,7 +52,7 @@ async def user(
         reservations_user = response_reservations_user.json()
 
     # 🔹 Fetch all reservations
-    url_all_reservations = "http://localhost:9093/reservations"
+    url_all_reservations = "http://reservation-service:9093/reservations"
     async with httpx.AsyncClient() as client:
         response_all_reservations = await client.get(url_all_reservations, headers=headers)
         response_all_reservations.raise_for_status()
