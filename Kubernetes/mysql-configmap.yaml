@@ -4,7 +4,12 @@ metadata:
   name: mysql-configmap
 data:
   host: mysql
-  db-name: crud-demo
+
+  client-db-name: client_db
+  event-db-name: event_db
+  reservation-db-name: reservation_db
+
+
   init.sql: |
     CREATE
     DATABASE IF NOT EXISTS client_db;
@@ -13,4 +18,6 @@ data:
       CREATE
     DATABASE IF NOT EXISTS event_db;
 
-    
+  
+
+

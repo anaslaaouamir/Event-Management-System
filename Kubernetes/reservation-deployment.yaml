@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reservation-deployment
+spec:
+  selector:
+    matchLabels:
+      app: reservation-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: reservation-service
+    spec:
+
+      containers:
+        - name: reservation-service
+          image: reservation-service:v1
+          ports:
+            - containerPort: 9091
+          env:
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: mysql-configmap
+                  key: host
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: mysql-configmap
+                  key: reservation-db-name
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: password
+
+
+
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: reservation-service
+spec:
+  selector:
+    app: reservation-service
+  ports:
+    - port: 9093
+      protocol: "TCP"
+      targetPort: 9093
+  type: NodePort
+
+
+
+
