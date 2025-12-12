@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7eadbaf2-f5c4-4467-ba2c-d45921681703" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kubernetes/mysql-configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Kubernetes/mysql-configmap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/event-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/reservation-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kubernetes/event-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Kubernetes/event-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kubernetes/reservation-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Kubernetes/reservation-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway_service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gatway_service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatway_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gatway_service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +271,9 @@
       <workItem from="1759142071274" duration="11064000" />
       <workItem from="1764062122507" duration="7533000" />
       <workItem from="1764325560454" duration="5346000" />
-      <workItem from="1764411742487" duration="3971000" />
+      <workItem from="1764411742487" duration="4246000" />
+      <workItem from="1764531533594" duration="1882000" />
+      <workItem from="1764586722780" duration="1921000" />
     </task>
     <servers />
   </component>

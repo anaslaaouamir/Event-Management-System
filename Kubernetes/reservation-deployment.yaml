@@ -17,8 +17,12 @@ spec:
         - name: reservation-service
           image: reservation-service:v1
           ports:
-            - containerPort: 9091
+            - containerPort: 9093
           env:
+          
+            - name: EUREKA_INSTANCE_PREFER_IP_ADDRESS
+              value: "true"
+              
             - name: DB_HOST
               valueFrom:
                 configMapKeyRef:

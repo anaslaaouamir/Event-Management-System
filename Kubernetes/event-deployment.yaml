@@ -17,8 +17,12 @@ spec:
         - name: event-service
           image: event-service:v1
           ports:
-            - containerPort: 9091
+            - containerPort: 9092
           env:
+          
+            - name: EUREKA_INSTANCE_PREFER_IP_ADDRESS
+              value: "true"
+          
             - name: DB_HOST
               valueFrom:
                 configMapKeyRef:
