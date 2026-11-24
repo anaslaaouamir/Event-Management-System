@@ -52,7 +52,8 @@ spec:
               name: mysql-persistent-storage
 
             - name: initdb
-              mountPath: /docker-entrypoint-initdb.d
+              mountPath: /docker-entrypoint-initdb.d/init.sql
+              subPath: init.sql
 
       volumes:
         - name: mysql-persistent-storage
