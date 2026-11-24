@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-@FeignClient(name = "EVENT-SERVICE")
+@FeignClient(name = "event-service")
 
 public interface EventOpenFeign {
 

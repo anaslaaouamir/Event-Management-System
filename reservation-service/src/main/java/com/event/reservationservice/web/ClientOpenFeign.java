@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.concurrent.TimeUnit;
 
-@FeignClient(name = "CLIENT-SERVICE")
+@FeignClient(name = "client-service")
 
 public interface ClientOpenFeign {
 
